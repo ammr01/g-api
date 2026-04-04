@@ -38,7 +38,7 @@ so the function get_access_token will provide the access token no matter if you 
 if you are not authenticated before, it will read the client secret file 'json file installed by these steps <br> 
 https://github.com/ammr01/g-api/blob/main/setup-google.md' it will start a local php server, that runs a php code <br> 
 that will handle the received code, and write it to named pipe, the library will be waiting already on that pipe, <br> 
-and after gaining the code, the php server will be killed, and then the library will ask for access/refresh <br>  
+and after gaining the code, the php server will be killed, and then the library will ask for access/refresh <br>
 tokens, and stores the json response as file `token.json` in the current working directory 'in the future i will <br>  
 add posibality to select directory instead of current working directory limitation, but for now it is not that <br> 
 bad limitation for me'. <br>
