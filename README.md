@@ -33,17 +33,18 @@ https://github.com/ammr01/g-api/blob/main/setup-google.md
 
 ## How it Works
 
-this library provide functions to deal with google APIs, to deal with any API, you first need an access token, <br>
-so the function get_access_token will provide the access token no matter if you authenticated before, or not. <br>
-if you are not authenticated before, it will read the client secret file 'json file installed by these steps <br> 
-https://github.com/ammr01/g-api/blob/main/setup-google.md' it will start a local php server, that runs a php code <br> 
-that will handle the received code, and write it to named pipe, the library will be waiting already on that pipe, <br> 
+this library provide functions to deal with google APIs, to deal with any API, you first need an access token. <br><br>
+So the function get_access_token will provide the access token no matter if you authenticated before, or not. <br><br>
+If you are not authenticated before, it will read the client secret file 'json file installed by these steps <br> 
+https://github.com/ammr01/g-api/blob/main/setup-google.md'. <br><br>
+It will start a local php server, that runs a php code that will handle the received code, and write it to <br>
+named pipe, the library will be waiting already on that pipe. <br> <br>
 and after gaining the code, the php server will be killed, and then the library will ask for access/refresh <br>
-tokens, and stores the json response as file `token.json` in the current working directory 'in the future i will <br>  
+tokens, and stores the json response as file `token.json` in the current working directory 'in the future i will <br>
 add posibality to select directory instead of current working directory limitation, but for now it is not that <br> 
-bad limitation for me'. <br>
+bad limitation for me'. <br><br>
 now you are authenticated and have your access token, you can send APIs requests, but if the access token is expire <br>
-the library will detect and hadle this by refresh your access token. <br>
+the library will detect and hadle this by refresh your access token. <br><br>
 you can use functions like `upload_youtube_video` 'which i didn't wrote it yet, but in the near future' to upload <br>
 video file if you have access token, and appropriate permissions/scopes<br> 
 this library is dealing heavily with json, so for json parsing, i used my json-parser-hm, is a json-parser that <br> 
