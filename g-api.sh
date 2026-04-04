@@ -476,7 +476,6 @@ gurl(){
 
 
 # for future, these wrappers will be easy to implement, only it needs to study the APIs 
-# upload_youtube_video(){}
 # send_email(){}
 # create_draft(){}
 # read_sheet_range(){}
