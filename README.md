@@ -19,7 +19,7 @@
 * `bash`
 * `curl`
 * `php`
-* `coreutils`
+* `coreutils 'cat,rm,env,mktemp,mkfifo,dirname,sleep,ps'`
 
 
 ---
