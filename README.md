@@ -45,8 +45,8 @@ add posibality to select directory instead of current working directory limitati
 bad limitation for me'. <br><br>
 Now you are authenticated and have your access token, you can send APIs requests, but if the access token is expire <br>
 the library will detect and hadle this by refresh your access token. <br><br>
-You can use functions like `upload_youtube_video` 'which i didn't write it yet, but in the near future' to upload <br>
-video file if you have access token, and appropriate permissions/scopes.<br><br> 
+You can use functions like `read_sheet_range` 'which i didn't write it yet, but in the near future' to read <br>
+data from sheet range if you have access token, and appropriate permissions/scopes.<br><br> 
 This library is dealing heavily with json, so for json parsing, i used my json-parser-hm, is a json-parser that <br> 
 fully written in bash, and stores output in associative arrays 'hash maps'. <br> 
 
