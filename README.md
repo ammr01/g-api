@@ -62,6 +62,9 @@ To use this library you should source it in your bash script, example:
 ```bash
 source g-api.sh
 
+# set scopes
+set_scopes "https://www.googleapis.com/auth/gmail.modify" "https://www.googleapis.com/auth/spreadsheets.readonly"
+
 get_access_token
 access_token="$OUTPUT"
 
