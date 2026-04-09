@@ -31,6 +31,9 @@
 cd g-api
 source g-api.sh
 
+# set scopes
+set_scopes "https://www.googleapis.com/auth/gmail.modify" "https://www.googleapis.com/auth/spreadsheets.readonly"
+
 # first get the access token 
 get_access_token
 access_token="$OUTPUT"
